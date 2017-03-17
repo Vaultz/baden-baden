@@ -1,0 +1,188 @@
+html {
+}
+
+body {
+  font-family: 'montserratregular';
+  margin:auto;
+}
+
+header {
+  heigth: 100px;
+  max-width: 960px;
+  margin:auto;
+  /*background-color:blue;*/
+}
+
+.siteheader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #1FBED6;
+}
+
+.sitetitle {
+  max-width:150px;
+}
+
+.bluetitle {
+  color: #1FBED6;
+  text-transform: uppercase;
+}
+
+.siteheader__leftpart {
+  display:flex;
+  align-items: center;
+}
+
+.siteheader__rightpart {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.siteheader__hr {
+  color: #1FBED6;
+}
+
+.sitelogo {
+  max-width: 60px;
+  height: 40px;
+}
+
+.sitenav {
+  list-style-type: none;
+  font-size: 12px;
+  display: flex;
+  flex: 1;
+}
+
+.sitenav li {
+  display:inline;
+  text-transform: uppercase;
+}
+
+.sitenav >li:after {
+  content:" |";
+}
+
+.sitenav li:last-child:after {
+  content: " ";
+}
+
+.sitenav li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.sitenav li a:hover {
+  color: #1FBED6;
+}
+
+.pagehader {
+  max-width:500px;
+}
+
+main {
+  margin-top:10px;
+  margin-bottom:10px;
+  max-width:960px;
+  display: flex;
+  margin: auto;
+}
+
+section {
+  flex-grow:1;
+  justify-content:center;
+  /*background-color: red;*/
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-right:45px;
+}
+
+article {
+
+}
+
+figure {
+  margin:0;
+}
+
+.access_map {
+  display:flex
+}
+
+.access_text {
+  margin-left: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #1FBED6;
+}
+
+
+aside {
+  max-width:210px;
+  /*background-color: yellow;*/
+}
+
+.asideicons {
+  list-style-type:none;
+
+}
+
+footer {
+  background-color: #1FBED6;
+  color: #FFF;
+  max-width:960px;
+  margin:auto;
+}
+
+.footer__upperpart {
+  display:flex;
+  flex-grow:1;
+}
+
+.footer__upperpart section {
+  width:25%;
+}
+
+@media screen and (max-width : 700px) {
+  .footer__upperpart {
+    flex-wrap: wrap;
+  }
+}
+
+
+.bluebackground {
+  padding:8px;
+  color: #FFFFFF;
+  background-color: #1FBED6;
+}
+
+.pricetable {
+  width:100%;
+}
+
+.fa-twitter {
+  color: #1DA1F2;
+}
+
+.fa-facebook {
+  color: #3B5998;
+}
