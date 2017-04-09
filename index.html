@@ -7,6 +7,7 @@
     <title>Musée océanographique de Baden-Baden</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/dropdown.css">
+    <link rel="stylesheet" href="assets/css/burger.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css">
@@ -23,9 +24,31 @@
 
       <div class="siteheader__rightpart">
 
-        <div class="languages">
+        <div class="icons">
           <img src="assets/img/fr.png" alt="french flag">
           <img src="assets/img/de.png" alt="deutch flag">
+
+          <nav class="burger-nav">
+            <input type="checkbox" class="menu-toggler" id="menu-toggler" aria-hidden="true">
+            <label for="menu-toggler" class="menu-toggler__label" aria-hidden="true">
+                <span class="menu-toggler__label__text">Menu</span>
+                <span class="menu-toggler__label__visual">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </label>
+
+            <ul class="burger-menu">
+                <li><a href="#">Le musée</a></li>
+                <li><a href="#">Animations</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">La boutique</a></li>
+                <li><a href="#">Préparez votre visite</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+          </nav>
         </div>
 
         <ul class="sitenav">
@@ -56,6 +79,7 @@
           </li>
           <li><a href="#">Contact</a></li>
         </ul>
+
       </div>
     </header>
 
@@ -83,19 +107,22 @@
         <ul class="vignettes">
 
           <li>
-            <img src="assets/img/" alt="Vignette carte">
+            <div class="round"></div>
+            <i class="fa fa-map" aria-hidden="true"></i>
             <p>Préparez votre visite</p>
             <p>Fictis pendere suspicionum amplitudo eius suspicionum amplitudo vita vel ubi exclamabant exaggerantium eius exaggerantium exaggerantium.</p>
           </li>
 
           <li>
-            <img src="/" alt="Vignette calendrier">
+            <div class="round">.</div>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
             <p>En ce moment</p>
             <p>De diligat nimirum quemquam fides nullus nimirum atque est enim nulla nulla benevolentiae est benevolentiae.</p>
           </li>
 
           <li>
-            <img src="/" alt="Vignette billet">
+            <div class="round">.</div>
+            <i class="fa fa-ticket" aria-hidden="true"></i>
             <p>Billetterie</p>
             <p>Imaginarius truci truci imaginarius subinde obiecta magister conplures quid equitum defensi imaginarius cuius agenda essent.</p>
           </li>

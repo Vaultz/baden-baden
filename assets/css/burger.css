@@ -1,0 +1,125 @@
+.burger-nav {
+  display:none;
+}
+
+.menu-toggler {
+    display: none;
+}
+
+.menu-toggler__label {
+    /*display: block;*/
+    position: absolute;
+    /*top: 0;
+    right: 10px;
+    bottom: 0;*/
+    width: 44px;
+    /*height: 100%;*/
+}
+
+.menu-toggler__label:hover,
+.menu-toggler__label:focus,
+.menu-toggler__label:active {
+    cursor: pointer
+}
+
+.menu-toggler__label__text {
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.menu-toggler__label__visual span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #1fbed6;
+    transition: transform .5s, top .5s, bottom .5s, opacity .2s;
+    opacity: 1;
+}
+
+.menu-toggler__label__visual span:nth-child(1){}
+
+.menu-toggler__label__visual span:nth-child(2) {
+    top: 9px;
+}
+
+.menu-toggler__label__visual span:nth-child(3) {
+    top:18px;
+}
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 19px;
+}
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggler:checked + .menu-toggler__label .menu-toggler__label__visual span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 19px;
+}
+
+
+/* Beware of the bad code ahead.*/
+.burger-nav {
+  margin-right:40px;
+  margin-top: -10px;
+}
+
+.burger-menu {
+    position: absolute;
+    list-style-type: none;
+    left: 0;
+    top:75px;
+    padding-left: 0;
+    display: none;
+    z-index:1;
+    width:100%;
+}
+
+.menu-toggler:checked ~ .burger-menu {
+    display: block;
+}
+
+.burger-menu li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.burger-menu a {
+    display: block;
+    line-height: 44px;
+    padding: 0 .7em;
+}
+
+.burger-menu a,
+.burger-menu a:visited,
+.burger-menu a:hover,
+.burger-menu a:focus,
+.burger-menu a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.burger-menu a,
+.burger-menu a:visited {
+    background-color: white;
+    color: #17a0b5;
+    border:solid #17a0b5 thin;
+}
+
+.burger-menu a:hover,
+.burger-menu a:focus,
+.burger-menu a:active {
+    background-color: #17a0b5;
+    color: white;
+}
+
+@media screen and (max-width : 850px) {
+  .burger-nav {
+    display:block;
+  }
+}

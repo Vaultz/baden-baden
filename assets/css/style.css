@@ -15,15 +15,22 @@ header {
   margin:auto;
 }
 
-header img {
+/*header img {
   position:relative;
+}*/
+
+.icons {
+  display:flex;
 }
 
+.slider-images {
+  max-width: 960px;
+  width:100%;
+}
 
 
 .slider-text {
   position: absolute;
-  top: 170px;
   color: white;
   max-width: 365px;
   text-align: center;
@@ -126,10 +133,6 @@ main {
   margin-right:45px;
 }*/
 
-.slider-images {
-  max-width: 960px;
-}
-
 main section {
   text-align: center;
   margin-left: 50px;
@@ -159,20 +162,29 @@ main section {
 }
 
 .vignettes li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #1FBED6;
   margin: 15px;
   color: white;
   max-width: 230px;
   padding: 5px;
+  padding-top: 18px;
 
 }
 
-.vignettes li > :first-child {
+
+.round {
   background-color: white;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-top: -90px;
 }
+
 
 
 .vignettes li > :nth-child(2) {
@@ -183,7 +195,7 @@ main section {
 
 .vignettes li > :nth-child(3) {
   font-size:14px;
-  font-weight: light;
+  font-family: 'montserratsemibold';
 }
 
 
@@ -196,7 +208,7 @@ main section {
   list-style: none;
   display:flex;
   flex-wrap:wrap;
-  margin-left: -40px;
+  margin-left: -40px; /* replacing the text, displaced by ul>li */
   text-align:left;
 }
 
@@ -214,6 +226,14 @@ main section {
 .ournews__content li img {
   width: 200px;
   height: 150px;
+}
+
+
+.fa-map, .fa-calendar, .fa-ticket {
+  /*color:black;*/
+  color: #1FBED6;
+  font-size: 40px!important; /* WARNING : overriding the default font size */
+  z-index: 2;
 }
 
 .ournews_info {
@@ -266,7 +286,7 @@ footer {
 
 .footer__upperpart__section4 ul {
   list-style: none;
-  margin-left:-40px;
+  margin-left: -40px; /* replacing the text, displaced by ul>li */
 }
 
 .footer__upperpart img {
@@ -284,6 +304,26 @@ footer {
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width : 850px) {
+  .sitenav {
+    display:none;
+  }
+}
+
+@media screen and (max-width : 850px) {
+  .sitenav {
+    display:none;
+  }
+}
+
+@media screen and (max-width : 850px) {
+  .burger-nav {
+    display:block;
+  }
+}
+
+
 
 
 .bluebackground {
