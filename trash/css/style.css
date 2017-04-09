@@ -63,7 +63,7 @@ header {
 }
 
 .sitenav >li:after {
-  content:" |";
+  content:" | ";
 }
 
 .sitenav li:last-child:after {
@@ -89,6 +89,10 @@ main {
   max-width:960px;
   display: flex;
   margin: auto;
+}
+
+.slider-images {
+  display:none;
 }
 
 section {

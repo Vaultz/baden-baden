@@ -1,0 +1,305 @@
+html {
+}
+
+body {
+  font-family: 'montserratregular';
+  margin:auto;
+}
+
+/****  HEADER STYLE****/
+header {
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+}
+
+header img {
+  position:relative;
+}
+
+
+
+.slider-text {
+  position: absolute;
+  top: 170px;
+  color: white;
+  max-width: 365px;
+  text-align: center;
+}
+
+.slider-text-link {
+  text-decoration: none;
+  color: white;
+  border-style: solid;
+  border-width: thin;
+  padding: 7px;
+}
+
+.siteheader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #1FBED6;
+}
+
+.sitetitle {
+  max-width:150px;
+}
+
+.bluetitle {
+  color: #1FBED6;
+  text-transform: uppercase;
+}
+
+.siteheader__leftpart {
+  display:flex;
+  align-items: center;
+}
+
+.siteheader__rightpart {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.siteheader__hr {
+  color: #1FBED6;
+}
+
+.sitelogo {
+  max-width: 60px;
+  height: 40px;
+}
+
+.sitenav {
+  list-style-type: none;
+  font-size: 12px;
+  display: flex;
+  flex: 1;
+}
+
+.sitenav li {
+  display:inline;
+  text-transform: uppercase;
+}
+
+.sitenav >li:after {
+  content:" | ";
+  white-space: pre-wrap;
+}
+
+.sitenav li:last-child:after {
+  content: " ";
+}
+
+.sitenav li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.sitenav li a:hover {
+  color: #1FBED6;
+}
+
+.pagehader {
+  max-width:500px;
+}
+
+
+/****  MAIN CONTENT STYLE****/
+main {
+  margin-top:10px;
+  margin-bottom:10px;
+  max-width:960px;
+  /*display: flex;*/
+  margin: auto;
+}
+
+/*section {
+  flex-grow:1;
+  justify-content:center;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-right:45px;
+}*/
+
+.slider-images {
+  max-width: 960px;
+}
+
+main section {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom:30px;
+}
+
+.welcome > :first-child  {
+  color:#1FBED6;
+  font-size: 20px;
+  font-weight: semibold;
+}
+
+.welcome > :nth-child(2), .welcome > :nth-child(3) {
+  font-size: 15px;
+  font-weight: light;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* BLUE CARDS SECTION */
+.vignettes {
+  list-style: none;
+  display:flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.vignettes li {
+  background-color: #1FBED6;
+  margin: 15px;
+  color: white;
+  max-width: 230px;
+  padding: 5px;
+
+}
+
+.vignettes li > :first-child {
+  background-color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+
+.vignettes li > :nth-child(2) {
+  font-size:18px;
+  font-weight: semibold;
+}
+
+
+.vignettes li > :nth-child(3) {
+  font-size:14px;
+  font-weight: light;
+}
+
+
+/* OURNEWS CONTENT */
+.ournews-maintitle {
+  text-transform: uppercase;
+}
+
+.ournews__content {
+  list-style: none;
+  display:flex;
+  flex-wrap:wrap;
+  margin-left: -40px;
+  text-align:left;
+}
+
+.ournews-titles {
+  font-size:15px;
+  font-weight: bold;
+  max-width: 180px;
+}
+
+.ournews__content li {
+  margin:10px;
+  max-width: 190px;
+}
+
+.ournews__content li img {
+  width: 200px;
+  height: 150px;
+}
+
+.ournews_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ournews_info div :last-child {
+  font-size:10px;
+  font-weight: normal;;
+}
+
+.ournews__comments {
+  display:flex;
+}
+
+.newsbutton {
+   text-decoration: none;
+   border-style: solid;
+   border-width: thin;
+   padding: 7px;
+   text-align: center;
+}
+
+
+
+/****  FOOTER STYLE****/
+footer {
+  background-color: #1FBED6;
+  color: #FFF;
+  max-width:960px;
+  margin:auto;
+  padding: 30px;
+}
+
+.footer__upperpart {
+  display:flex;
+  flex-grow:1;
+}
+
+.footer__upperpart section {
+  width:25%;
+  margin: 10px;
+}
+
+.footer__upperpart__section3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__upperpart__section4 ul {
+  list-style: none;
+  margin-left:-40px;
+}
+
+.footer__upperpart img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer__lowerpart {
+  text-align: center;
+  font-size: 11px;
+}
+
+@media screen and (max-width : 700px) {
+  .footer__upperpart {
+    flex-wrap: wrap;
+  }
+}
+
+
+.bluebackground {
+  padding:8px;
+  color: #FFFFFF;
+  background-color: #1FBED6;
+}
+
+.pricetable {
+  width:100%;
+}
+
+.fa-twitter {
+  color: #1DA1F2;
+}
+
+.fa-facebook {
+  color: #3B5998;
+}
